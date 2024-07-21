@@ -14,7 +14,7 @@
 }
 
 *{
-   font-family: 'Nunito', sans-serif;s
+   font-family: 'Nunito', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb{
 
 body{
    background-color: var(--light-bg);
-   padding-left: 30rem;
+   /* padding-left: 30rem; */
    
 }
 
@@ -59,7 +59,8 @@ body.dark{
 }
 
 body.active{
-   padding-left: 0;
+   /* padding-left: 0; */
+   text-transform: capitalize;
 }
 
 section{
@@ -137,11 +138,12 @@ section{
 }
 
 .header{
-   position: sticky;
-   top:0; left:0; right: 0;
+    position: sticky; 
+   /* top:0; left:0; right: 0; */
    background-color: var(--white);
    z-index: 1000;
    border-bottom: var(--border);
+   background-color: #f39c12;
 }
 
 .header .flex{
@@ -150,6 +152,7 @@ section{
    justify-content: space-between;
    position: relative;
    padding: 1.5rem 2rem;
+  
 }
 
 .header .flex .logo{
