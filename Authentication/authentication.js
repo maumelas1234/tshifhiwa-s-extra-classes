@@ -1,8 +1,8 @@
 
-document.addEventListener("DOMContentLouded",(event)=>{
 
 
-    const getUserInput = ()=>{
+
+    function getUserInput (){
 
         let UserSignUpname = document.getElementById("UserSignUpname").value;
         console.log(UserSignUpname);
@@ -11,6 +11,5 @@ document.addEventListener("DOMContentLouded",(event)=>{
         
          return UserSignUpname;  
         }
-document.querySelector("button").addEventListener("click",getUserInput)
     
-});
+    
