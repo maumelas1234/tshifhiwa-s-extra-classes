@@ -1,12 +1,12 @@
 
-    function getUserInput ( ConfirmPassword,email,password,name){
+    const  getUserInpu  = async (email, password, ConfirmPassword ) => {
 
            email= document.getElementById("userSignupEmail").value;
            password= document.getElementById("password").value;
            ConfirmPassword= document.getElementById("ConfirmPassword").value;
 
             const userInforArry= [{
-          name:name,
+          name:"",
             email:email,
             password:password,
             ConfirmPassword: ConfirmPassword,
@@ -44,6 +44,25 @@ alert("password doesnot match ")
 
             alert("email is incorrect")
         }
+      
+
+try{  
+    const response = await fetch('http://localhost:3000/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+const result =await response.text();
+alert(result);
+}
+
+catch(error){
+    console.error("erro",error)
+}
+
+
+
+        
 // // Example to send data to the server
 // const createUser = async () => {
 //     const response = await fetch('http://localhost:3000/users', {
